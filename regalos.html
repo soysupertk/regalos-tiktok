@@ -30,35 +30,37 @@
     }
 
     .carousel {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
       position: relative;
+      height: 250px;
+      width: 100%;
+      overflow: visible;
     }
-
+    
     .event-card {
       position: absolute;
+      top: 0;
+      left: 50%;
       width: 220px;
       height: 250px;
-      align-items: center;
-      justify-content: center;
       border-radius: 20px;
       overflow: hidden;
-      flex-shrink: 0;
+      overflow: visible;
+      padding: 10px;
       opacity: 0;
-      transition: opacity 0.8s ease-in-out;
       pointer-events: none;
+      transform: translateX(-50%);
+      transition: opacity 0.8s ease-in-out;
       z-index: 0;
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
     .event-card.active {
       opacity: 1;
-      z-index: 1;
       pointer-events: auto;
+      z-index: 10;
     }
-
 
     .event-card img {
       width: 100%;
@@ -180,7 +182,7 @@
         </div>
         </div><div class="event-card">
             <img src="https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/3d369da1798184aebb5a44c1b5c23408.png~tplv-obj.webp" alt="Bandera del Orgullo">
-            <div class="action">Gay</div>
+            <div class="action">Gayyy</div>
         </div>
         </div><div class="event-card">
             <img src="https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/264833d12eae28fdb517803074b2d3da.png~tplv-obj.webp" alt="Oi amigo">
